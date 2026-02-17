@@ -17,7 +17,7 @@ const content = {
   projects: {
     title: 'Projects & Jobs',
     subtitle: 'A snapshot of work I have undertaken.',
-    body: 'This page can highlight your key projects, clients, responsibilities, and outcomes. Add cards for each project including the problem, your role, the tech stack, and measurable results.',
+    body: 'More information coming soon!',
   },
   about: {
     title: 'About Me',
@@ -27,7 +27,7 @@ const content = {
   contact: {
     title: 'Contact Me',
     subtitle: "Let's connect.",
-    body: 'Email: you@example.com\nPhone: +1 (000) 000-0000\nLinkedIn: linkedin.com/in/yourprofile\nGitHub: github.com/yourusername',
+    body: 'Email: you@example.com\nPhone: +1 (000) 000-0000\nLinkedIn: linkedin.com/in/yourprofile\nGitHub: github.com/alphaaa77',
   },
 };
 
