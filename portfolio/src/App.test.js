@@ -1,8 +1,15 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders navigation and switches to contact page', async () => {
+  const user = userEvent.setup();
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  expect(screen.getByText(/hi, i'm hugh/i)).toBeInTheDocument();
+
+  await user.click(screen.getByRole('button', { name: /contact/i }));
+
+  expect(screen.getByRole('heading', { name: /contact me/i })).toBeInTheDocument();
+  expect(screen.getByText(/you@example.com/i)).toBeInTheDocument();
 });
